@@ -33,4 +33,18 @@ class CalculadoraTest {
         assertEquals(3, resultado);
     }
 
+    @Test
+    public void testarVerificaoDePar() {
+        Calculadora calculadora = new Calculadora();
+        boolean verifica = calculadora.verificarSeEPar(2);
+        assertTrue(verifica);
+    }
+
+    @Test
+    public void testarVerificacaoDeImpar() {
+        Calculadora calculadora = new Calculadora();
+        boolean verifica = calculadora.verificarSeEImpar(37);
+        assertTrue(verifica);
+    }
+
 }

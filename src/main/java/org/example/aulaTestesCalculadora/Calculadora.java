@@ -17,4 +17,12 @@ public class Calculadora {
         return q / r;
     }
 
+    public Boolean verificarSeEPar(int p) {
+        return p % 2 == 0;
+    }
+
+    public Boolean verificarSeEImpar(int i) {
+        return i % 2 != 0;
+    }
+
 }
