@@ -34,6 +34,14 @@ class CalculadoraTest {
     }
 
     @Test
+    public void testDivisaoPorZero() {
+        Calculadora c = new Calculadora();
+        assertThrows(ArithmeticException.class, () -> {
+            c.dividir(21, 0);
+        });
+    }
+
+    @Test
     public void testarVerificaoDePar() {
         Calculadora calculadora = new Calculadora();
         boolean verifica = calculadora.verificarSeEPar(2);

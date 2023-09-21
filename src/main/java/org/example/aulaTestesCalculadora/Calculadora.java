@@ -14,6 +14,9 @@ public class Calculadora {
     }
 
     public int dividir(int q, int r) {
+        if (r == 0) {
+            throw new ArithmeticException("Opa!...divisão por zero não é permitida.");
+        }
         return q / r;
     }
 
